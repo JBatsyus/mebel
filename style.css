@@ -1072,25 +1072,77 @@ body {
   background: #ebebeb;
   overflow: hidden;
 }
+@media (max-width: 1239.98px) {
+  .b2b-form {
+    background: #e7e7e7;
+  }
+}
+@media (max-width: 1239.98px) {
+  .b2b-form {
+    padding-bottom: 56%;
+    overflow: hidden;
+  }
+}
 .b2b-form::before {
   content: "";
   position: absolute;
-  top: auto;
+  top: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 84%;
+  height: 100%;
   background-image: url(./images/img-form.webp);
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
   pointer-events: none;
 }
+@media (max-width: 1919.98px) {
+  .b2b-form::before {
+    right: -185px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .b2b-form::before {
+    right: -280px;
+  }
+}
+@media (max-width: 1239.98px) {
+  .b2b-form::before {
+    background-image: url(./images/img-form-mob.webp);
+    top: auto;
+    bottom: 0;
+    right: 0;
+    background-position: bottom;
+  }
+}
 .b2b-form__content {
   grid-column: 2/6;
   border-radius: 12px;
   padding-block: 80px;
   z-index: 2;
+}
+@media (max-width: 1919.98px) {
+  .b2b-form__content {
+    grid-column: 1/6;
+  }
+}
+@media (max-width: 1439.98px) {
+  .b2b-form__content {
+    grid-column: 1/7;
+  }
+}
+@media (max-width: 1239.98px) {
+  .b2b-form__content {
+    grid-column: 2/12;
+    padding-block: 64px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .b2b-form__content {
+    grid-column: 1/13;
+    padding-block: 40px 24px;
+  }
 }
 .b2b-form__title {
   font-weight: 400;
@@ -1107,6 +1159,10 @@ body {
 @media (max-width: 1439.98px) {
   .b2b-form__title {
     font-size: 40px;
+  }
+}
+@media (max-width: 1239.98px) {
+  .b2b-form__title {
     text-align: center;
   }
 }
@@ -1151,6 +1207,12 @@ body {
   display: flex;
   column-gap: 16px;
 }
+@media (max-width: 767.98px) {
+  .b2b-form__row {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
 .b2b-form__field {
   flex: 1;
 }
@@ -1179,14 +1241,14 @@ body {
   line-height: 1.1875;
   color: #757575;
   resize: vertical;
-  min-height: 118px;
-  transition: box-shadow 0.3s ease;
+  height: 118px;
 }
 .b2b-form__textarea::placeholder {
   color: #999;
 }
 .b2b-form__file-upload {
   width: 100%;
+  height: 124px;
 }
 .b2b-form__file-area {
   display: flex;
@@ -1196,7 +1258,6 @@ body {
   border: 1px dashed #cbcbcb;
   border-radius: 8px;
   padding: 16px 24px;
-  min-height: 124px;
   cursor: pointer;
   transition: all 0.3s ease;
   background: #fff;
@@ -1286,7 +1347,7 @@ body {
 .b2b-form__submit {
   width: 100%;
   border-radius: 8px;
-  padding: 20px 40px;
+  padding: 18px 40px;
   background: #cbcbcb;
   color: #fff;
   border: none;
@@ -1301,16 +1362,4 @@ body {
 }
 .b2b-form__submit:active {
   background: #999;
-}
-@media (max-width: 1239.98px) {
-  .b2b-form__submit {
-    padding: 18px 32px;
-    font-size: 17px;
-  }
-}
-@media (max-width: 767.98px) {
-  .b2b-form__submit {
-    padding: 16px 24px;
-    font-size: 16px;
-  }
 }/*# sourceMappingURL=style.css.map */

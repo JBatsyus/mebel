@@ -1084,19 +1084,44 @@ body {
     background: #ebebeb;
     overflow: hidden;
 
+    @media (max-width: 1239.98px) {
+        background: #e7e7e7;
+    }
+
+    @media (max-width: 1239.98px) {
+        padding-bottom: 56%;
+        overflow: hidden;
+    }
+
     &::before {
         content: "";
         position: absolute;
-        top: auto;
+        top: 0;
         bottom: 0;
         right: 0;
         width: 100%;
-        height: 84%;
+        height: 100%;
         background-image: url(./images/img-form.webp);
         background-size: contain;
         background-position: bottom right;
         background-repeat: no-repeat;
         pointer-events: none;
+
+        @media (max-width: 1919.98px) {
+            right: -185px;
+        }
+
+        @media (max-width: 1439.98px) {
+            right: -280px;
+        }
+
+        @media (max-width: 1239.98px) {
+            background-image: url(./images/img-form-mob.webp);
+            top: auto;
+            bottom: 0;
+            right: 0;
+            background-position: bottom;
+        }
     }
 
     &__content {
@@ -1104,6 +1129,24 @@ body {
         border-radius: 12px;
         padding-block: 80px;
         z-index: 2;
+
+        @media (max-width: 1919.98px) {
+            grid-column: 1/6;
+        }
+
+        @media (max-width: 1439.98px) {
+            grid-column: 1/7;
+        }
+
+        @media (max-width: 1239.98px) {
+            grid-column: 2/12;
+            padding-block: 64px 0;
+        }
+
+        @media (max-width: 767.98px) {
+            grid-column: 1/13;
+            padding-block: 40px 24px;
+        }
     }
 
     &__title {
@@ -1119,6 +1162,9 @@ body {
 
         @media (max-width: 1439.98px) {
             font-size: 40px;
+        }
+
+        @media (max-width: 1239.98px) {
             text-align: center;
         }
 
@@ -1150,7 +1196,6 @@ body {
         @media (max-width: 767.98px) {
             margin-bottom: 24px;
         }
-
     }
 
     &__form {
@@ -1162,6 +1207,10 @@ body {
         display: flex;
         column-gap: 16px;
 
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            row-gap: 12px;
+        }
     }
 
     &__field {
@@ -1195,17 +1244,16 @@ body {
         line-height: 1.1875;
         color: #757575;
         resize: vertical;
-        min-height: 118px;
-        transition: box-shadow 0.3s ease;
+        height: 118px;
 
         &::placeholder {
             color: #999;
         }
     }
 
-
     &__file-upload {
         width: 100%;
+        height: 124px;
     }
 
     &__file-area {
@@ -1217,7 +1265,6 @@ body {
         border: 1px dashed #cbcbcb;
         border-radius: 8px;
         padding: 16px 24px;
-        min-height: 124px;
         cursor: pointer;
         transition: all 0.3s ease;
         background: #fff;
@@ -1244,7 +1291,6 @@ body {
         background: #f4f4f4;
         align-content: center;
         margin-bottom: 8px;
-
 
         svg {
             transition: fill 0.3s ease;
@@ -1303,7 +1349,6 @@ body {
 
     &__footer {
         margin-top: 12px;
-
     }
 
     &__legal {
@@ -1323,14 +1368,12 @@ body {
                 text-decoration: none;
             }
         }
-
-        
     }
 
     &__submit {
         width: 100%;
         border-radius: 8px;
-        padding: 20px 40px;
+        padding: 18px 40px;
         background: #cbcbcb;
         color: #fff;
         border: none;
@@ -1346,16 +1389,6 @@ body {
 
         &:active {
             background: #999;
-        }
-
-        @media (max-width: 1239.98px) {
-            padding: 18px 32px;
-            font-size: 17px;
-        }
-
-        @media (max-width: 767.98px) {
-            padding: 16px 24px;
-            font-size: 16px;
         }
     }
 }
