@@ -525,7 +525,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 6px;
-    padding: 40px;
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -537,12 +537,36 @@ body {
 .b2b-advantages {
     &__grid.b2b-grid {
         grid-auto-rows: minmax(274px, auto);
+
+        @media (max-width: 1919.98px) {
+            grid-auto-rows: minmax(235px, auto);
+        }
+
+        @media (max-width: 1439.98px) {
+            grid-auto-rows: minmax(224px, auto);
+        }
+
+        @media (max-width: 1239.98px) {
+            grid-auto-rows: minmax(206px, auto);
+        }
+
     }
 
     .b2b-banner {
         @include b2b-card-base;
+        padding: 40px;
         grid-column: 2/12;
         aspect-ratio: 1490/615;
+
+        @media (max-width: 1919.98px) {
+            grid-column: 1/13;
+            padding: 56px;
+        }
+
+        @media (max-width: 1919.98px) {
+            padding: 24px;
+        }
+
 
 
         &__content {
@@ -558,12 +582,33 @@ body {
             font-size: 40px;
             line-height: 1.1;
             margin-bottom: 16px;
+
+            @media (max-width: 1919.98px) {
+                font-size: 36px;
+            }
+
+            @media (max-width: 1439.98px) {
+                font-size: 32px;
+            }
+
         }
 
         &__text {
             font-weight: 400;
             font-size: 28px;
             line-height: 1.2;
+
+            @media (max-width: 1919.98px) {
+                font-size: 26px;
+            }
+
+            @media (max-width: 1439.98px) {
+                font-size: 22px;
+            }
+
+            @media (max-width: 1919.98px) {
+                font-size: 20px;
+            }
         }
 
         &__btn {
@@ -595,8 +640,18 @@ body {
 
     .b2b-card-adv {
         @include b2b-card-base;
+        padding: 40px;
         text-decoration: none;
         transition: 0.4s ease-in-out;
+
+        @media (max-width: 1919.98px) {
+            padding: 24px;
+        }
+
+        @media (max-width: 1239.98px) {
+            padding: 20px;
+        }
+
 
         &--light {
             color: #282828;
@@ -615,18 +670,22 @@ body {
             height: 100%;
         }
 
-        &__title {
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 1.1;
-            margin-bottom: 16px;
-        }
-
-        &__text,
         &__title-small {
             font-weight: 400;
             font-size: 28px;
             line-height: 1.2;
+
+            @media (max-width: 1919.98px) {
+                font-size: 26px;
+            }
+
+            @media (max-width: 1439.98px) {
+                font-size: 22px;
+            }
+
+            @media (max-width: 1919.98px) {
+                font-size: 20px;
+            }
         }
 
         &__image-ibg {
@@ -663,6 +722,18 @@ body {
             left: 0;
             top: 90px;
 
+            @media (max-width: 1919.98px) {
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 170px;
+            }
+
+            @media (max-width: 1239.98px) {
+                top: 90px;
+            }
+
+
             img {
                 width: 100%;
                 height: 100%;
@@ -689,12 +760,22 @@ body {
             grid-column: 2/7;
             aspect-ratio: 733/274;
             grid-row: 1;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 1/7;
+                aspect-ratio: 644/235;
+            }
         }
 
         &:nth-child(2) {
             grid-column: 7/12;
             aspect-ratio: 733/274;
             grid-row: 1;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 7/13;
+                aspect-ratio: 644/235;
+            }
         }
 
         &:nth-child(1),
@@ -703,17 +784,36 @@ body {
                 height: 32px;
                 width: 32px;
                 margin-bottom: 16px;
+                flex-shrink: 0;
             }
 
             .b2b-card-adv__title-small {
                 margin-bottom: 16px;
                 margin-top: auto;
+
+                @media (max-width: 1239.98px) {
+                    margin-bottom: 12px;
+                }
+
             }
 
             .b2b-card-adv__text {
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 1.2;
+
+                @media (max-width: 1919.98px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1439.98px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1239.98px) {
+                    font-size: 16px;
+                }
+
             }
         }
 
@@ -721,12 +821,30 @@ body {
             grid-column: 2/6;
             aspect-ratio: 582 /548;
             grid-row: 2;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 1/5;
+                aspect-ratio: 421/482;
+            }
+
+            @media (max-width: 1439.98px) {
+                aspect-ratio: 355/435;
+            }
         }
 
         &:nth-child(4) {
             grid-column: 6/12;
             aspect-ratio: 884 /548;
             grid-row: 2;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 5/13;
+                aspect-ratio: 867/482;
+            }
+
+            @media (max-width: 1439.98px) {
+                aspect-ratio: 733/435;
+            }
         }
 
         &:nth-child(3),
@@ -738,6 +856,19 @@ body {
                 font-size: 80px;
 
                 line-height: 1.2;
+
+                @media (max-width: 1919.98px) {
+                    font-size: 64px;
+                }
+
+                @media (max-width: 1439.98px) {
+                    font-size: 56px;
+                }
+
+                @media (max-width: 1239.98px) {
+                    font-size: 48px;
+                }
+
             }
         }
 
@@ -745,12 +876,22 @@ body {
             grid-column: 2/8;
             aspect-ratio: 884 /626;
             grid-row: 3;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 1/9;
+                aspect-ratio: 867 /588;
+            }
         }
 
         &:nth-child(6) {
             grid-column: 8/12;
             aspect-ratio: 582 /626;
             grid-row: 3;
+
+            @media (max-width: 1919.98px) {
+                grid-column: 9/13;
+                aspect-ratio: 421 /588;
+            }
         }
     }
 }
