@@ -301,169 +301,86 @@
             </div>
         </section>
         <!-- PROCESS END -->
+
         <!-- FORM START -->
-        <section class=" b2b-contact ">
-            <div class=" b2b-container">
-                <div class="b2b-grid b2b-contact__grid">
-                    <div class="b2b-contact__media">
-                        <div class="b2b-contact__image-wrap">
-                            <picture>
-                                <source srcset="./images/form-tablet.webp" media="(max-width: 1919.98px)"
-                                    type="image/webp">
-                                <img src="./images/form.webp" alt="Модульный диван в светлой ткани"
-                                    class="b2b-contact__image" loading="lazy" decoding="async" width="1136"
-                                    height="761">
-                            </picture>
+        <section class="b2b-section b2b-form">
+            <div class="b2b-container">
+                <div class="b2b-grid b2b-contact__grid"">
+                    <div class=" b2b-form__content">
+                    <h2 class="b2b-form__title">Подберем решения под ваш проект</h2>
+                    <p class="b2b-form__subtitle">предложим подходящий формат реализации</p>
+
+                    <form class="b2b-form__form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__field">
+                                <label class="visually-hidden" for="b2b-form-name">Как к вам обращаться? *</label>
+                                <input type="text" id="b2b-form-name" name="name" class="b2b-form__input"
+                                    placeholder="Как к вам обращаться? *" required autocomplete="name" inputmode="text">
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="b2b-contact__content">
-                        <h2 class="b2b-contact__title">Оставьте заявку <br>
-                            на&nbsp;3D-визуализацию</h2>
-                        <p class="b2b-contact__description">Покажем, как будет выглядеть
-                            ваша мебель в&nbsp;нужных
-                            тканях
-                            и&nbsp;конфигурациях</p>
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__field">
+                                <label class="visually-hidden" for="b2b-form-phone">Ваш номер телефона *</label>
+                                <input type="tel" id="b2b-form-phone" name="phone" class="b2b-form__input"
+                                    placeholder="Ваш номер телефона *" required autocomplete="tel" inputmode="tel">
+                            </div>
+                            <div class="b2b-form__field">
+                                <label class="visually-hidden" for="b2b-form-email">Email *</label>
+                                <input type="email" id="b2b-form-email" name="email" class="b2b-form__input"
+                                    placeholder="Email *" required autocomplete="email">
+                            </div>
+                        </div>
 
-                        <form class="b2b-contact__form" action="#" method="POST">
-                            <div class="b2b-contact__row">
-                                <div class="b2b-contact__field">
-                                    <label class="visually-hidden" for="b2b-name">Как
-                                        к&nbsp;вам обращаться?</label>
-                                    <input type="text" id="b2b-name" name="name" class="b2b-contact__input"
-                                        placeholder="Как к вам обращаться?*" required autocomplete="name"
-                                        inputmode="text">
-                                </div>
-                                <div class="b2b-contact__field">
-                                    <label class="visually-hidden" for="b2b-phone">Ваш
-                                        номер телефона</label>
-                                    <input type="tel" id="b2b-phone" name="phone" class="b2b-contact__input"
-                                        placeholder="Ваш номер телефона*" required autocomplete="tel">
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__field">
+                                <div class="b2b-form__file-upload" id="upload-container">
+                                    <input type="file" id="b2b-form-file" name="file"
+                                        class="b2b-form__file-input visually-hidden"
+                                        accept=".pdf,.doc,.docx,.jpeg,.jpg,.heic">
+
+                                    <label for="b2b-form-file" class="b2b-form__file-area">
+                                        <div class="b2b-form__file-icon">
+
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14 4.62012C14.5412 4.62012 14.98 5.05888 14.98 5.60012V13.0201H22.4C22.9412 13.0201 23.38 13.4589 23.38 14.0001C23.38 14.5414 22.9412 14.9801 22.4 14.9801H14.98V22.4001C14.98 22.9414 14.5412 23.3801 14 23.3801C13.4588 23.3801 13.02 22.9414 13.02 22.4001V14.9801H5.6C5.05876 14.9801 4.62 14.5414 4.62 14.0001C4.62 13.4589 5.05876 13.0201 5.6 13.0201H13.02V5.60012C13.02 5.05888 13.4588 4.62012 14 4.62012Z"
+                                                    fill="#A9A9A9" />
+                                            </svg>
+                                        </div>
+                                        <span class="b2b-form__file-text">Загрузить файл</span>
+                                        <span class="b2b-form__file-hint">PDF, DOC, JPEG, HEIC до 3 Мбайт</span>
+                                    </label>
+
+                                    <div id="uploaded-file" class="b2b-form__uploaded-file"></div>
                                 </div>
                             </div>
+                        </div>
 
-                            <fieldset class="b2b-contact__fieldset">
-                                <legend class="b2b-contact__label">Тариф</legend>
-                                <div class="b2b-contact__chips">
-                                    <label class="b2b-contact__chip">
-                                        <input type="radio" name="tariff" value="lite" checked
-                                            class="b2b-contact__real-radio visually-hidden">
-                                        <span class="b2b-contact__chip-text">Лайт</span>
-                                    </label>
-                                    <label class="b2b-contact__chip">
-                                        <input type="radio" name="tariff" value="pro"
-                                            class="b2b-contact__real-radio visually-hidden">
-                                        <span class="b2b-contact__chip-text">Про</span>
-                                    </label>
-                                    <label class="b2b-contact__chip">
-                                        <input type="radio" name="tariff" value="max"
-                                            class="b2b-contact__real-radio visually-hidden">
-                                        <span class="b2b-contact__chip-text">Макс</span>
-                                    </label>
-                                    <label class="b2b-contact__chip">
-                                        <input type="radio" name="tariff" value="later"
-                                            class="b2b-contact__real-radio visually-hidden">
-                                        <span class="b2b-contact__chip-text">Выберу
-                                            позже</span>
-                                    </label>
-                                </div>
-                                <a href="#pricing" class="b2b-contact__link">Подробнее
-                                    о&nbsp;тарифах</a>
-                            </fieldset>
 
-                            <!-- Мессенджеры -->
-                            <div class="b2b-contact__messengers">
-                                <p class="b2b-contact__hint">Неудобно говорить? Можем
-                                    написать </p>
-                                <div class="b2b-contact__social-list">
-                                    <a href="javascript:void(0);" class="b2b-contact__social-item" target="_blank"
-                                        rel="noopener">
-                                        <svg aria-hidden="true" focusable="false" width="16" height="13"
-                                            viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.05637 5.54518C5.1971 3.73645 7.95364 2.5346 9.33782 1.95152C13.2774 0.297488 14.1056 0.0118995 14.6379 0C14.7563 0 15.0165 0.0237992 15.194 0.166594C15.336 0.285589 15.3714 0.440283 15.3951 0.559278C15.4188 0.678274 15.4424 0.928163 15.4188 1.11856C15.2058 3.37947 14.283 8.86515 13.8098 11.3878C13.6087 12.4588 13.2183 12.8158 12.8397 12.8515C12.0115 12.9229 11.3845 12.3041 10.5919 11.7805C9.33782 10.9595 8.63981 10.4478 7.42126 9.63862C6.01341 8.71045 6.92437 8.19878 7.72885 7.36581C7.94181 7.15162 11.5738 3.81975 11.6448 3.52226C11.6566 3.48656 11.6566 3.34377 11.5738 3.27237C11.491 3.20097 11.3727 3.22477 11.278 3.24857C11.1479 3.27237 9.16036 4.60512 5.29174 7.23491C4.72387 7.6276 4.21515 7.81799 3.75376 7.80609C3.24504 7.79419 2.27493 7.5205 1.54143 7.28251C0.654132 6.99692 -0.0557061 6.84223 0.00344711 6.34245C0.038939 6.08066 0.393858 5.81887 1.05637 5.54518Z"
-                                                fill="currentColor" />
-                                        </svg> <span>Telegram</span>
-                                    </a>
-                                    <a href="javascript:void(0);" class="b2b-contact__social-item">
-                                        <svg aria-hidden="true" focusable="false" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.1504 0C14.966 5.84992e-05 16 1.03215 16 5.84961V10.1504C16 14.9661 14.9676 15.9999 10.1504 16H5.84961C1.03365 16 1.92838e-05 14.9679 0 10.1504V5.84961C0 1.03361 1.03201 0 5.84961 0H10.1504ZM8.09277 1.91211C4.72324 1.91211 1.87911 4.51953 1.87891 7.98535C1.87891 9.43658 2.14727 10.4385 2.38379 11.3379C2.58235 12.0679 2.75781 12.737 2.75781 13.5283C2.84305 14.5817 4.78426 13.9659 5.39746 13.1777C6.36676 13.8784 6.92498 14.0537 8.125 14.0537C11.4423 14.0358 14.1187 11.335 14.1074 8.01758C14.1073 4.64815 11.4651 1.91227 8.09277 1.91211ZM8.17383 4.9082V4.91113C9.87444 5.00854 11.1837 6.45024 11.1172 8.15234C11.0029 9.85059 9.55069 11.145 7.85059 11.0635C7.31844 11.0208 6.80647 10.8385 6.36719 10.5352C6.10174 10.8006 5.67556 11.1446 5.50586 11.1045C5.15254 11.0111 4.7371 9.21482 4.9707 7.74023C5.25397 5.95929 6.53304 4.82373 8.17383 4.9082Z"
-                                                fill="currentColor" />
-                                        </svg> <span> Max</span>
-                                    </a>
-                                    <a href="javascript:void(0);" class="b2b-contact__social-item" target="_blank"
-                                        rel="noopener">
-                                        <svg aria-hidden="true" focusable="false" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7.75902 2.11006e-06C9.74821 0.0117084 11.6564 0.784559 13.0844 2.15709C14.5124 3.52981 15.3504 5.3965 15.4231 7.36691C15.4609 8.37562 15.2967 9.38207 14.9401 10.3276C14.5836 11.2729 14.0415 12.1389 13.3455 12.8756C12.6495 13.6123 11.813 14.2053 10.8846 14.62C9.95616 15.0347 8.95361 15.2633 7.93564 15.2921H7.71466C6.55738 15.2924 5.41476 15.0343 4.37147 14.5379L0.333522 15.4286H0.321803C0.313507 15.4285 0.305094 15.4269 0.297528 15.4235C0.289945 15.4201 0.282954 15.4147 0.277439 15.4085C0.271905 15.4022 0.267321 15.3947 0.264883 15.3867C0.262444 15.3787 0.262099 15.3699 0.263209 15.3616L0.945408 11.3153C0.30293 10.1502 -0.0225241 8.83924 0.00121129 7.51172C0.0250096 6.18432 0.397294 4.88582 1.08101 3.74414C1.76478 2.60246 2.73667 1.65675 3.90104 1.00028C5.06547 0.343845 6.38257 -0.000984235 7.72219 2.11006e-06H7.75902ZM4.96159 3.96094C4.89075 3.96935 4.82109 3.98811 4.75568 4.01702C4.66872 4.05551 4.59049 4.11126 4.52549 4.18025C4.3415 4.36721 3.82795 4.81665 3.79809 5.7606C3.76836 6.70509 4.43405 7.64017 4.52716 7.77121C4.6215 7.90443 5.80095 9.94254 7.74312 10.7695C8.88523 11.2572 9.38635 11.3412 9.71103 11.3412C9.84486 11.3412 9.94612 11.3274 10.0517 11.3212C10.4078 11.2994 11.2116 10.8916 11.3868 10.4481C11.562 10.0047 11.5736 9.61685 11.5274 9.53906C11.4813 9.46151 11.3542 9.40562 11.1633 9.30636C10.9722 9.207 10.0362 8.71076 9.86003 8.64091C9.79475 8.61077 9.72425 8.59258 9.65244 8.58733C9.60573 8.58977 9.56036 8.60373 9.52018 8.62751C9.47998 8.65127 9.4458 8.68418 9.42141 8.72377C9.26496 8.9169 8.90579 9.33686 8.78525 9.45787C8.759 9.48775 8.7269 9.51221 8.69066 9.52902C8.65429 9.54584 8.61448 9.55425 8.57431 9.55497C8.50043 9.55172 8.4281 9.53285 8.36254 9.49889C7.79523 9.2601 7.27782 8.91761 6.83743 8.49024C6.42603 8.08832 6.07644 7.62836 5.80116 7.125C5.69502 6.92983 5.80131 6.82886 5.89825 6.73745C5.99525 6.64594 6.09949 6.51951 6.19959 6.41016C6.28179 6.31676 6.35023 6.21198 6.403 6.09961C6.43025 6.04749 6.44416 5.98921 6.44318 5.93053C6.44218 5.87189 6.42691 5.81427 6.39797 5.76312C6.35171 5.66501 6.00659 4.70451 5.84468 4.3192C5.71326 3.98978 5.55638 3.97939 5.41946 3.96931C5.30686 3.96156 5.17767 3.95728 5.04864 3.95341H5.03274L4.96159 3.96094Z"
-                                                fill="currentColor" />
-                                        </svg> <span>WhatsApp</span>
-                                    </a>
-                                </div>
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__field">
+                                <label class="visually-hidden" for="b2b-form-task">Коротко опишите задачу *</label>
+                                <textarea id="b2b-form-task" name="task" class="b2b-form__textarea"
+                                    placeholder="Коротко опишите задачу *" required rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <div class="b2b-contact__footer">
-                                <p class="b2b-contact__legal">
-                                    Заполняя поля и&nbsp;нажимая кнопку &laquo;Заказать
-                                    визуализацию&raquo;,
-                                    Вы&nbsp;соглашаетесь на
-                                    <a href="/privacy" target="_blank" rel="noopener noreferrer">обработку
-                                        и&nbsp;передачу
-                                        своих персональных
-                                        данных</a>, а&nbsp;также принимаете условия
-                                    <a href="/offer" target="_blank" rel="noopener noreferrer">Публичной оферты</a>
-                                </p>
-                                <button type="submit" class="b2b-contact__submit">Заказать
-                                    визуализацию</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="b2b-form__footer">
+                            <p class="b2b-form__legal">
+                                Заполняя поля и нажимая кнопку «Оставить заявку », Вы соглашаетесь на обработку и
+                                передачу своих персональных данных, а также принимаете условия <a href="/privacy"
+                                    target="_blank" rel="noopener noreferrer">Публичной оферты</a>
+                            </p>
+                            <button type="submit" class="b2b-form__submit">Оставить заявку</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
             </div>
         </section>
         <!-- FORM END -->
-        <!-- HELP START -->
-        <section class="b2b-help section">
-            <div class="b2b-container">
-                <h2 class="b2b-help__title h2">Что ещё поможет вам определиться</h2>
-                <div class="b2b-grid b2b-help__grid">
-                    <div class="b2b-help-card">
-                        <a href="#samples" class="b2b-help-card__link">
-                            <div class="b2b-help-card__content">
-                                <h3 class="b2b-help-card__title">
-                                    Заказ образцов
-                                </h3>
-                                <p class="b2b-help-card__description">Рассмотреть материалы вживую</p>
-                            </div>
-                            <div class="b2b-help-card__image-box">
-                                <img src="./images/samples.webp" alt="Образцы тканей разных цветов"
-                                    class="b2b-help-card__img" width="432" height="470" loading="lazy">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="b2b-help-card">
-                        <a href="#showroom" class="b2b-help-card__link">
-                            <div class="b2b-help-card__content">
-                                <h3 class="b2b-help-card__title">
-                                    Поездка в&nbsp;шоурум
-                                </h3>
-                                <address class="b2b-help-card__description">
-                                    Москва, Шмитовский пр-д, 39&nbsp;корп.1, этаж 2
-                                </address>
-                            </div>
-                            <div class="b2b-help-card__image-box">
-                                <img src="./images/showroom.webp" alt="Интерьер шоурума с мебелью"
-                                    class="b2b-help-card__img" width="432" height="470" loading="lazy">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- HELP END -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
