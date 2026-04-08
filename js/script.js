@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         grabCursor: true,
         speed: 1500,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
         navigation: {
             nextEl: '.b2b-furnishing__arrow--next',
             prevEl: '.b2b-furnishing__arrow--prev',

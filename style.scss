@@ -550,6 +550,10 @@ body {
             grid-auto-rows: minmax(206px, auto);
         }
 
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+        }
     }
 
     .b2b-banner {
@@ -567,7 +571,10 @@ body {
             padding: 24px;
         }
 
-
+        @media (max-width: 767.98px) {
+            padding: 20px;
+            aspect-ratio: 340/400;
+        }
 
         &__content {
             position: relative;
@@ -591,6 +598,9 @@ body {
                 font-size: 32px;
             }
 
+            @media (max-width: 767.98px) {
+                font-size: 28px;
+            }
         }
 
         &__text {
@@ -608,6 +618,10 @@ body {
 
             @media (max-width: 1919.98px) {
                 font-size: 20px;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 18px;
             }
         }
 
@@ -652,7 +666,6 @@ body {
             padding: 20px;
         }
 
-
         &--light {
             color: #282828;
             background: #f7f7f7;
@@ -685,6 +698,10 @@ body {
 
             @media (max-width: 1919.98px) {
                 font-size: 20px;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 18px;
             }
         }
 
@@ -733,6 +750,10 @@ body {
                 top: 90px;
             }
 
+            @media (max-width: 767.98px) {
+                top: -47px;
+                bottom: -90px;
+            }
 
             img {
                 width: 100%;
@@ -794,7 +815,6 @@ body {
                 @media (max-width: 1239.98px) {
                     margin-bottom: 12px;
                 }
-
             }
 
             .b2b-card-adv__text {
@@ -813,13 +833,12 @@ body {
                 @media (max-width: 1239.98px) {
                     font-size: 16px;
                 }
-
             }
         }
 
         &:nth-child(3) {
             grid-column: 2/6;
-            aspect-ratio: 582 /548;
+            aspect-ratio: 582/548;
             grid-row: 2;
 
             @media (max-width: 1919.98px) {
@@ -869,6 +888,9 @@ body {
                     font-size: 48px;
                 }
 
+                @media (max-width: 767.98px) {
+                    font-size: 32px;
+                }
             }
         }
 
@@ -879,18 +901,33 @@ body {
 
             @media (max-width: 1919.98px) {
                 grid-column: 1/9;
-                aspect-ratio: 867 /588;
+                aspect-ratio: 867/588;
             }
         }
 
         &:nth-child(6) {
             grid-column: 8/12;
-            aspect-ratio: 582 /626;
+            aspect-ratio: 582/626;
             grid-row: 3;
 
             @media (max-width: 1919.98px) {
                 grid-column: 9/13;
-                aspect-ratio: 421 /588;
+                aspect-ratio: 421/588;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                grid-column: 1 / -1;
+                grid-row: auto;
+                aspect-ratio: auto;
+                min-height: 220px;
             }
         }
     }
