@@ -11,9 +11,8 @@ body {
   width: 100%;
 }
 
-.b2b-contact__input:focus-visible,
-.b2b-contact__chip:focus-within,
-.b2b-contact__social-item:focus-visible {
+.b2b-form__input:focus-visible,
+.b2b-form__input:focus-within {
   outline: 1px solid #e5e5e5 !important;
 }
 
