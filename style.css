@@ -221,7 +221,7 @@ body {
     padding: 16px 44px;
   }
 }
-.b2b-hero__footer {
+.b2b-hero__features {
   position: absolute;
   bottom: 30px;
   left: 0;
@@ -229,24 +229,25 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
+  list-style: none;
 }
 @media (max-width: 1919.98px) {
-  .b2b-hero__footer {
+  .b2b-hero__features {
     bottom: 20px;
   }
 }
 @media (max-width: 1439.98px) {
-  .b2b-hero__footer {
+  .b2b-hero__features {
     gap: 20px;
   }
 }
 @media (max-width: 1239.98px) {
-  .b2b-hero__footer {
+  .b2b-hero__features {
     gap: 8px;
   }
 }
 @media (max-width: 767.98px) {
-  .b2b-hero__footer {
+  .b2b-hero__features {
     position: static;
     flex-direction: column;
     width: 100%;

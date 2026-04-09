@@ -222,7 +222,7 @@ body {
         }
     }
 
-    &__footer {
+    &__features{
         position: absolute;
         bottom: 30px;
         left: 0;
@@ -230,6 +230,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 16px;
+        list-style: none;
 
         @media (max-width: 1919.98px) {
             bottom: 20px;

@@ -19,18 +19,19 @@
                     <h1 class="b2b-hero__title">
                         Мягкая мебель для бизнеса — пространства, где важны сроки, нагрузка и масштаб
                     </h1>
-                    <a href="#" class="b2b-btn b2b-btn--white">Получить подбор под проект</a>
+                    <a href="#" class="b2b-btn b2b-btn--white"
+                        aria-label="Получить подбор мебели под ваш проект">Получить подбор под проект</a>
                 </div>
-                <div class="b2b-hero__footer">
-                    <div class="b2b-hero__feature">
-                        <p><span>Серийные модели</span> с глубокой кастомизацией размеров, посадки, материалов
+                <ul class="b2b-hero__features">
+                    <li class="b2b-hero__feature">
+                        <p><strong>Серийные модели</strong> с глубокой кастомизацией размеров, посадки, материалов
                             обивки</p>
-                    </div>
-                    <div class="b2b-hero__feature">
-                        <p><span>Контрактное производство</span> с разработкой моделей по индивидуальному ТЗ под
+                    </li>
+                    <li class="b2b-hero__feature">
+                        <p><strong>Контрактное производство</strong> с разработкой моделей по индивидуальному ТЗ под
                             проект</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- HERO END -->
@@ -307,78 +308,79 @@
             <div class="b2b-container">
                 <div class="b2b-grid b2b-contact__grid">
                     <div class=" b2b-form__content">
-                    <h2 class="b2b-form__title">Подберем решения <br> под ваш проект</h2>
-                    <p class="b2b-form__subtitle">предложим подходящий формат реализации</p>
+                        <h2 class="b2b-form__title">Подберем решения <br> под ваш проект</h2>
+                        <p class="b2b-form__subtitle">предложим подходящий формат реализации</p>
 
-                    <form class="b2b-form__form" action="#" method="POST" enctype="multipart/form-data">
-                        <div class="b2b-form__row">
-                            <div class="b2b-form__field">
-                                <label class="visually-hidden" for="b2b-form-name">Как к вам обращаться? *</label>
-                                <input type="text" id="b2b-form-name" name="name" class="b2b-form__input"
-                                    placeholder="Как к вам обращаться? *" required autocomplete="name" inputmode="text">
-                            </div>
-                        </div>
-
-                        <div class="b2b-form__row">
-                            <div class="b2b-form__field">
-                                <label class="visually-hidden" for="b2b-form-phone">Ваш номер телефона *</label>
-                                <input type="tel" id="b2b-form-phone" name="phone" class="b2b-form__input"
-                                    placeholder="Ваш номер телефона *" required autocomplete="tel" inputmode="tel">
-                            </div>
-                            <div class="b2b-form__field">
-                                <label class="visually-hidden" for="b2b-form-email">Email *</label>
-                                <input type="email" id="b2b-form-email" name="email" class="b2b-form__input"
-                                    placeholder="Email *" required autocomplete="email">
-                            </div>
-                        </div>
-
-                        <div class="b2b-form__row">
-                            <div class="b2b-form__field">
-                                <div class="b2b-form__file-upload" id="upload-container">
-                                    <input type="file" id="b2b-form-file" name="file"
-                                        class="b2b-form__file-input visually-hidden"
-                                        accept=".pdf,.doc,.docx,.jpeg,.jpg,.heic">
-
-                                    <label for="b2b-form-file" class="b2b-form__file-area">
-                                        <span class="b2b-form__file-icon">
-
-                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M14 4.62012C14.5412 4.62012 14.98 5.05888 14.98 5.60012V13.0201H22.4C22.9412 13.0201 23.38 13.4589 23.38 14.0001C23.38 14.5414 22.9412 14.9801 22.4 14.9801H14.98V22.4001C14.98 22.9414 14.5412 23.3801 14 23.3801C13.4588 23.3801 13.02 22.9414 13.02 22.4001V14.9801H5.6C5.05876 14.9801 4.62 14.5414 4.62 14.0001C4.62 13.4589 5.05876 13.0201 5.6 13.0201H13.02V5.60012C13.02 5.05888 13.4588 4.62012 14 4.62012Z"
-                                                    fill="#A9A9A9" />
-                                            </svg>
-                                        </span>
-                                        <span class="b2b-form__file-text">Загрузить файл</span>
-                                        <span class="b2b-form__file-hint">PDF, DOC, JPEG, HEIC до 3 Мбайт</span>
-                                    </label>
-
-                                    <div id="uploaded-file" class="b2b-form__uploaded-file"></div>
+                        <form class="b2b-form__form" action="#" method="POST" enctype="multipart/form-data">
+                            <div class="b2b-form__row">
+                                <div class="b2b-form__field">
+                                    <label class="visually-hidden" for="b2b-form-name">Как к вам обращаться? *</label>
+                                    <input type="text" id="b2b-form-name" name="name" class="b2b-form__input"
+                                        placeholder="Как к вам обращаться? *" required autocomplete="name"
+                                        inputmode="text">
                                 </div>
                             </div>
-                        </div>
 
-
-                        <div class="b2b-form__row">
-                            <div class="b2b-form__field">
-                                <label class="visually-hidden" for="b2b-form-task">Коротко опишите задачу *</label>
-                                <textarea id="b2b-form-task" name="task" class="b2b-form__textarea"
-                                    placeholder="Коротко опишите задачу *" required rows="5"></textarea>
+                            <div class="b2b-form__row">
+                                <div class="b2b-form__field">
+                                    <label class="visually-hidden" for="b2b-form-phone">Ваш номер телефона *</label>
+                                    <input type="tel" id="b2b-form-phone" name="phone" class="b2b-form__input"
+                                        placeholder="Ваш номер телефона *" required autocomplete="tel" inputmode="tel">
+                                </div>
+                                <div class="b2b-form__field">
+                                    <label class="visually-hidden" for="b2b-form-email">Email *</label>
+                                    <input type="email" id="b2b-form-email" name="email" class="b2b-form__input"
+                                        placeholder="Email *" required autocomplete="email">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="b2b-form__footer">
-                            <p class="b2b-form__legal">
-                                Заполняя поля и нажимая кнопку «Оставить заявку », Вы соглашаетесь на обработку и
-                                передачу своих персональных данных, а также принимаете условия <a href="/privacy"
-                                    target="_blank" rel="noopener noreferrer">Публичной оферты</a>
-                            </p>
-                            <button type="submit" class="b2b-form__submit">Оставить заявку</button>
-                        </div>
-                    </form>
+                            <div class="b2b-form__row">
+                                <div class="b2b-form__field">
+                                    <div class="b2b-form__file-upload" id="upload-container">
+                                        <input type="file" id="b2b-form-file" name="file"
+                                            class="b2b-form__file-input visually-hidden"
+                                            accept=".pdf,.doc,.docx,.jpeg,.jpg,.heic">
 
+                                        <label for="b2b-form-file" class="b2b-form__file-area">
+                                            <span class="b2b-form__file-icon">
+
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M14 4.62012C14.5412 4.62012 14.98 5.05888 14.98 5.60012V13.0201H22.4C22.9412 13.0201 23.38 13.4589 23.38 14.0001C23.38 14.5414 22.9412 14.9801 22.4 14.9801H14.98V22.4001C14.98 22.9414 14.5412 23.3801 14 23.3801C13.4588 23.3801 13.02 22.9414 13.02 22.4001V14.9801H5.6C5.05876 14.9801 4.62 14.5414 4.62 14.0001C4.62 13.4589 5.05876 13.0201 5.6 13.0201H13.02V5.60012C13.02 5.05888 13.4588 4.62012 14 4.62012Z"
+                                                        fill="#A9A9A9" />
+                                                </svg>
+                                            </span>
+                                            <span class="b2b-form__file-text">Загрузить файл</span>
+                                            <span class="b2b-form__file-hint">PDF, DOC, JPEG, HEIC до 3 Мбайт</span>
+                                        </label>
+
+                                        <div id="uploaded-file" class="b2b-form__uploaded-file"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="b2b-form__row">
+                                <div class="b2b-form__field">
+                                    <label class="visually-hidden" for="b2b-form-task">Коротко опишите задачу *</label>
+                                    <textarea id="b2b-form-task" name="task" class="b2b-form__textarea"
+                                        placeholder="Коротко опишите задачу *" required rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="b2b-form__footer">
+                                <p class="b2b-form__legal">
+                                    Заполняя поля и нажимая кнопку «Оставить заявку », Вы соглашаетесь на обработку и
+                                    передачу своих персональных данных, а также принимаете условия <a href="/privacy"
+                                        target="_blank" rel="noopener noreferrer">Публичной оферты</a>
+                                </p>
+                                <button type="submit" class="b2b-form__submit">Оставить заявку</button>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
         <!-- FORM END -->
