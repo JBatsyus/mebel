@@ -1,7 +1,7 @@
 // Инициализация слайдеров для всех карточек
 document.addEventListener('DOMContentLoaded', () => {
     const furnishingSlider = new Swiper('.b2b-furnishing__slider', {
-        slidesPerView: 1.001, 
+        slidesPerView: 1.001,
         spaceBetween: 8,
         loop: true,
         grabCursor: true,
@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function handleFiles(files) {
-        // Берем только первый файл из списка
+
         const file = files[0];
 
         if (!file) return;
 
         if (file.size > MAX_SIZE) {
             alert(`Файл ${file.name} слишком большой (макс. 3 Мбайт)`);
-            fileInput.value = ''; // Сбрасываем инпут
+            fileInput.value = '';
             return;
         }
 
@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function addFileToList(file) {
-        // Очищаем список перед добавлением нового файла (чтобы был только один)
         fileList.innerHTML = '';
 
         const item = document.createElement('div');
