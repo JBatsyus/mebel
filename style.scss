@@ -152,7 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     background: url("./images/hero.webp") center/cover no-repeat;
-    background-color: #2a2a2a; // Фоллбэк цвет пока грузится фото
+    background-color: #65436a; // Фоллбэк цвет пока грузится фото
 
     @media (max-width: 1239.98px) {
         background: url("./images/hero-p.webp") center/cover no-repeat;
