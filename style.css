@@ -925,7 +925,7 @@ body {
 .b2b-process .b2b-container {
   overflow: visible;
 }
-.b2b-process__flex {
+.b2b-process__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -937,7 +937,7 @@ body {
   width: 100%;
 }
 @media (max-width: 1239.98px) {
-  .b2b-process__flex {
+  .b2b-process__list {
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -951,7 +951,7 @@ body {
   }
 }
 @media (max-width: 1239.98px) and (max-width: 767.98px) {
-  .b2b-process__flex {
+  .b2b-process__list {
     width: calc(100% + 40px);
     margin-left: -20px;
     margin-right: -20px;
@@ -960,12 +960,12 @@ body {
   }
 }
 @media (max-width: 1239.98px) {
-  .b2b-process__flex::-webkit-scrollbar {
+  .b2b-process__list::-webkit-scrollbar {
     display: none;
   }
 }
 @media (max-width: 767.98px) {
-  .b2b-process__flex {
+  .b2b-process__list {
     gap: 8px;
   }
 }
